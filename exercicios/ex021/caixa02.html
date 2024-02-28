@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(61, 61, 61);
+            padding: 3px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        /*quando passar o mouse em cima no link*/
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgba(161, 161, 161, 0.685);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 180px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Area com links de navegação-->
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Loja</a>
+            <a href="#">Dúvidas</a>
+            <a href="#">Parceiros</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"> <!--Seções da página-->
+            Esportes Política e Tecnologia
+        </section>
+        <section id="noticias">
+            <article> <!--conteúdo para ser lido de forma separada-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita amet libero unde corporis error, corrupti necessitatibus facere atque perferendis voluptate suscipit voluptas et culpa! Ipsam atque aliquid cumque tempore.</p>
+                <aside> <!--conteúdo periférico ao site (ao lado)-->
+                    <p>Artigo escrito por Gabriel Gouveia</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
