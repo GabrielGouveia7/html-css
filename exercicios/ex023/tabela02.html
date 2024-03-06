@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative; /* Config Cabeçalho fixo */
+            
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(170, 168, 168, 0.384);
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        /*  Cabeçalho fixo */
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray
+        }
+
+        /*  Efeito zebra na tabela */
+        tbody > tr:nth-child(odd){
+            background-color: rgb(231, 243, 127);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(144, 202, 90);
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE   
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <Table>
+        <caption>População das UF's</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">18 000 000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 500 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num"> 12 000 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>107 500 000</strong></td>
+            </tr>
+        </tfoot>
+    </Table>
+</body>
+</html>
