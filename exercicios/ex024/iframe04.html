@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ab, iste voluptas expedita sed repellendus et qui cupiditate, unde consequatur est nulla aliquam quidem, rerum veritatis sapiente vel. Voluptatem, expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aut libero cum expedita maxime consequatur nulla debitis alias maiores ad laudantium, vero officiis quod fugit, porro quidem accusantium earum eligendi.</p>
+    <iframe src="paginas-extras/pagina04.html" frameborder="1" sandbox="allow-same-origin" referrerpolicy="no-referrer">
+        <p>Seu navegador não é compatível com isso</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni minima id optio veritatis? Reiciendis ullam at cum doloremque magnam sequi sed libero, unde suscipit officiis fuga, laborum aperiam deleniti vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur quasi harum. Amet voluptatem animi eveniet vel accusamus distinctio impedit iusto facilis alias nisi debitis, esse, itaque nam temporibus officia.</p>
+</body>
+</html>
+
+<!-- sandbox = "sandbox" ->  para que um iframe que solicite informações (como um forms) não seja utilizável, dando mais segurança ao seu site.
+    sandbox = allow-same-origin -> permite conteúdo de mesma origem;
+              allow-forms -> permite formulários;
+              allow-scripts -> permite scripts;
+
+referrerpolicy = "no-referrer" = o conteúdo carregado dentro do iframe não coletará nenhum tipo de informação do usuario. Por padrão referrerpolicy = "no-referrer-when-downgrade"
+-->
