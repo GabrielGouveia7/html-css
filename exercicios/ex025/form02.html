@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <p>
+        <label for="iuso">Usuário</label>
+        <input type="text" name="uso" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome do usuário" autocomplete="username">
+    </p>
+    <p>
+        <label for="isen">Senha</label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Mínimo de 8 dígitos" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
+
+<!--
+    Sempre que tiver um campo obrigatório a ser preenchido em nossa página, devemos utilizar o atributo "required" dentro do "input", assim, o usuário não poderá enviar informações com os campos em branco ou sem a regra definida.
+
+    minlength = mínimo de letras aceita.
+    maxlength = máximo de letras aceita.
+    size = tamanho da caixa de preenchida.
+    placeholder = "dica" do que deverá ser preenchido na caixa.
+    autocomplete no form = autocompleta a caixa.
+    autocomplete no input = indica o tipo de texto da caixa.
+-->
