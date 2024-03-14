@@ -1,3 +1,94 @@
 @charset "UTF-8";
 
 /* Toda as mídias */
+
+/* Typical Device Breakpoints 
+-------------------------------
+
+Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+ Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}
+-----------------------------
+*/
+
+@media print{
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /* desnecessário, n imprimi background*/  
+    }
+
+    main{
+        border: 1px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Página para impressão';
+        text-decoration: underline;
+    }
+
+    #pc{display: none;}
+    #phone{display: none;}
+    #tablet{display: none;}
+    #tv{display: none;}
+    #print{display: block;}
+}
+
+
+/* iPads, Tablets */
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #pc{display: none;}
+    #phone{display: none;}
+    #tablet{display: block;}
+    #tv{display: none;}
+    #print{display: none;}
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #pc{display: block;}
+    #phone{display: none;}
+    #tablet{display: none;}
+    #tv{display: none;}
+    #print{display: none;}
+
+}
+
+
+/* Desktops, large screens */
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #pc{display: none;}
+    #phone{display: none;}
+    #tablet{display: none;}
+    #tv{display: block;}
+    #print{display: none;}
+
+}
