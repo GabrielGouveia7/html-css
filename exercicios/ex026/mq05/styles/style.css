@@ -54,6 +54,7 @@ menu a:hover{
 #burguer:hover{
     background-color: #FFFFFF;
     color: #850000;
+    border-bottom: 2px solid black ;
 }
 
 main{
